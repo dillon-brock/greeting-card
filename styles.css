@@ -4,6 +4,25 @@
     --background: rgb(224, 234, 247);
     --header-background: white;
     --footer-background: rgb(243, 242, 242);
+
+    /* ocean colors */
+    --baby-powder: #FFFFFA;
+    --eagle-green: #0D5C63;
+    --cadet-blue: #44A1A0;
+    --middle-blue: #78CDD7;
+    --yale-blue: #004385;
+
+    /* forest colors */
+    --jungle-green: #0D1F22;
+    --forest-green: #264027;
+    --hunter-green: #3C5233;
+    --leafy-green: #6F732F;
+    --camel: #B38A58;
+
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -27,4 +46,71 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60%;
+}
+
+#card {
+    height: 420px;
+    width: 80%;
+    text-align: center;
+}
+
+.input-grouping {
+    margin-top: 40px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height:150px;
+    padding: 25px 0px 25px 0px;
+    
+}
+
+#title-display {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+}
+
+#message-display {
+    margin-top: 30px;
+}
+
+.ocean {
+    background: var(--yale-blue);
+    border: 6px solid var(--baby-powder);
+    color: var(--baby-powder);
+}
+
+.ocean .image-container {
+    border: 5px solid var(--eagle-green);
+    background-color: var(--cadet-blue);
+}
+
+.forest {
+    background-color: var(--leafy-green);
+    border: 6px solid var(--jungle-green);
+    color: var(--jungle-green);
+}
+
+.forest .image-container {
+    border: 5px solid var(--camel);
+    background-color: var(--hunter-green);
+}
+
+#card-image {
+    
+}
+
+#download-button {
+    
 }

@@ -18,7 +18,7 @@
     <main>
         <h1>Greeting Card Designer</h1>
         <div class="content">
-            <section id="inputs">
+            <section id="input-section" class="container">
                 <div class="input-grouping">
                     <label for="title-input">title:</label>
                     <input id="title-input">
@@ -30,7 +30,7 @@
                 <div class="input-grouping">
                     <label for="art-select">art:</label>
                     <select id="art-select">
-                        <option value="balloons.png">Balloons</option>
+                        <option value="balloons.png" selected>Balloons</option>
                         <option value="flowers.png">Flowers</option>
                         <option value="flowers.png">Animals</option>
                     </select>
@@ -38,17 +38,23 @@
                 <div class="input-grouping">
                     <label for="theme-select">theme:</label>
                     <select id="theme-select">
+                        <option value="ocean" selected>Ocean</option>
                         <option value="space">Space</option>
                         <option value="forest">Forest</option>
-                        <option value="ocean">Ocean</option>
                     </select>
                 </div>
             </section>
-            <section id="card-section">
-                <div id="card">
-                    <img id="card-image" src="/assets/balloons.png">
+            <section id="card-section" class="container">
+                <div id="card" class="ocean">
+                    <h2 id="title-display">Happy Birthday!</h2>
+                    <div class="image-container" class="ocean">
+                        <img id="card-image" src="/assets/balloons.png">
+                    </div>
+                    <p id="message-display">It's your birthday and this is a birthday card</p>
                 </div>
-                <button id="download-button">DOWNLOAD</button>
+                <div id="button-container">
+                    <button id="download-button">DOWNLOAD</button>
+                </div>
             </section>
         </section>
     </main>
