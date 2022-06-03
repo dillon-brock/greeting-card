@@ -1,3 +1,23 @@
+## Wireframe
+
+![Wireframe](/assets/wireframe.png)
+
+## States:
+
+- title (from text input)
+- message (from textarea input)
+- art (from dropdown)
+- theme (from dropdown)
+
+## Events:
+
+- 'input', corresponding to title text input
+- 'input', corresponding to message textarea input
+- 'change', corresponding to art dropdown menu
+- 'change', corresponding to theme dropdown
+- 'click', corresponding to download button
+
+
 ## The Golden Rule:
 
 🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
