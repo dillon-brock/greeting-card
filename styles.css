@@ -178,4 +178,24 @@ footer {
     #card { 
         width: 600px;
     }
+
+    .input-grouping {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.input {
+    padding: 10px;
+}
+
+label {
+    font-family: cursive;
+    margin-right: 15px;
+}
+
+.input-grouping > hr {
+    width: 40%;
+    position: relative;
+    top: 12px;
 }
