@@ -2,6 +2,8 @@
 
 const titleInput = document.getElementById('title-input');
 const titleDisplay = document.getElementById('title-display');
+const messageInput = document.getElementById('message-input');
+const messageDisplay = document.getElementById('message-display');
 
 // set event listeners
     // get info from user input
@@ -10,4 +12,8 @@ const titleDisplay = document.getElementById('title-display');
 
 titleInput.addEventListener('input', () => {
     titleDisplay.textContent = titleInput.value;
+});
+
+messageInput.addEventListener('input', () => {
+    messageDisplay.textContent = messageInput.value;
 });
