@@ -9,6 +9,7 @@ const imageDisplay = document.getElementById('card-image');
 const themeSelect = document.getElementById('theme-select');
 const card = document.getElementById('card');
 const cardImageContainer = document.getElementById('card-image-container');
+const downloadButton = document.getElementById('download-button');
 
 // set event listeners
     // get info from user input
@@ -32,4 +33,13 @@ themeSelect.addEventListener('change', () => {
     cardImageContainer.classList.value = 'image-container';
     card.classList.add(themeSelect.value);
     cardImageContainer.classList.add(themeSelect.value);
+});
+
+downloadButton.addEventListener('click', async() => {
+    // eslint-disable-next-line no-undef
+    const dataUrl = await domtoimage.toPng(card);
+    const link = document.createElement('a');
+    link.download = titleInput.value + '.png';
+    link.href = dataUrl;
+    link.click();
 });
