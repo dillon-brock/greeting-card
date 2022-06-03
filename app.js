@@ -35,11 +35,11 @@ themeSelect.addEventListener('change', () => {
     cardImageContainer.classList.add(themeSelect.value);
 });
 
-downloadButton.addEventListener('click', async() => {
-    // eslint-disable-next-line no-undef
+downloadButton.addEventListener('click', async () => {
     const dataUrl = await domtoimage.toPng(card);
     const link = document.createElement('a');
     link.download = titleInput.value + '.png';
     link.href = dataUrl;
     link.click();
 });
+
