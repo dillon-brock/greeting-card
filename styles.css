@@ -19,6 +19,14 @@
     --leafy-green: #6F732F;
     --camel: #B38A58;
 
+    /* space colors */
+    --lavender-gray: #C9CDD6;
+    --dark-blue: #0B3C84;
+    --lilac: #C9A0C8;
+    --space-purple: #583A95;
+    --midnight-purple: #100B2E;
+
+
 }
 
 * {
@@ -107,10 +115,13 @@ footer {
     background-color: var(--hunter-green);
 }
 
-#card-image {
-    
+.space {
+    background-color: var(--midnight-purple);
+    border: 6px solid var(--dark-blue);
+    color: var(--lavender-gray);
 }
 
-#download-button {
-    
+.space .image-container {
+    border: 5px solid var(--lilac);
+    background-color: var(--lavender-gray);
 }
