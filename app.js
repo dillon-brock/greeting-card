@@ -4,6 +4,8 @@ const titleInput = document.getElementById('title-input');
 const titleDisplay = document.getElementById('title-display');
 const messageInput = document.getElementById('message-input');
 const messageDisplay = document.getElementById('message-display');
+const imageSelect = document.getElementById('image-select');
+const imageDisplay = document.getElementById('card-image');
 
 // set event listeners
     // get info from user input
@@ -17,3 +19,8 @@ titleInput.addEventListener('input', () => {
 messageInput.addEventListener('input', () => {
     messageDisplay.textContent = messageInput.value;
 });
+
+imageSelect.addEventListener('change', () => {
+    imageDisplay.src = `/assets/${imageSelect.value}`;
+});
+
