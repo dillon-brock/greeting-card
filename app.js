@@ -6,6 +6,9 @@ const messageInput = document.getElementById('message-input');
 const messageDisplay = document.getElementById('message-display');
 const imageSelect = document.getElementById('image-select');
 const imageDisplay = document.getElementById('card-image');
+const themeSelect = document.getElementById('theme-select');
+const card = document.getElementById('card');
+const cardImageContainer = document.getElementById('card-image-container');
 
 // set event listeners
     // get info from user input
@@ -24,3 +27,9 @@ imageSelect.addEventListener('change', () => {
     imageDisplay.src = `/assets/${imageSelect.value}`;
 });
 
+themeSelect.addEventListener('change', () => {
+    card.classList.value = '';
+    cardImageContainer.classList.value = 'image-container';
+    card.classList.add(themeSelect.value);
+    cardImageContainer.classList.add(themeSelect.value);
+});

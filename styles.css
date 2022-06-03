@@ -97,9 +97,9 @@ footer {
 }
 
 .forest {
-    background-color: var(--leafy-green);
+    background-color: var(--forest-green);
     border: 6px solid var(--jungle-green);
-    color: var(--jungle-green);
+    color: rgb(238, 238, 215);
 }
 
 .forest .image-container {
